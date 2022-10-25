@@ -126,7 +126,8 @@ sudo chown -R 472:472 /portainer/Files/AppData/Config/grafana/data || error "Fai
 echo "Done"
 
 ```
-The bash script that is specified above will create the necessary directory structure for **_Prometheus_** and **_Grafana_**.
+The bash script that is specified above will create the necessary directory structure for **_Prometheus_** and **_Grafana_**. Also, it will download `prometheus.yml`
+configuration file.
 
 ## Installation
 
@@ -144,8 +145,6 @@ services:
     restart: always
     ipc: shareable
     privileged: true
-#    ports:
-#      - "8080:8080"
     command:
       - '--docker_only=true'
       - '--housekeeping_interval=30s'
@@ -170,8 +169,6 @@ services:
     restart: always
     user: "root:root"
     pid: host
-#    ports:
-#      - "9100:9100"
     volumes:
       - /proc:/host/proc:ro
       - /sys:/host/sys:ro
@@ -236,8 +233,21 @@ services:
 
 networks:
   monitor_net:
-
 ```
+
+**FYI**: The default username and password for Grafana are set under `GF_SECURITY_ADMIN_USER` and `GF_SECURITY_ADMIN_PASSWORD` environment variables. Remember to change them.
+
+Click `Deploy the stack` button at the bottom of the page.
+
+## Grafana Config
+
+When all four containers will be up and running open your favorite browser and navigate to the following URL: `http://host-ip-address:3000`.
+You should see the Grafana login page. Use your _**user**_ and the _**password**_ you've set for `GF_SECURITY_ADMIN_USER` and `GF_SECURITY_ADMIN_PASSWORD` environment variables to login.
+
+Click on the configuration icon located on the left sidebar and then click on `Add data source` button.
+
+![img-description](/assets/img/posts/2022-10-23/add-data-source.PNG)
+_Add data source Grafana page_
 
 > Work in progress
 {: .prompt-info }
