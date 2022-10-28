@@ -2,7 +2,7 @@
 title: PHP-FPM with NGINX in Docker container
 date: 2022-10-28 05:00:00 -0700
 categories: [DevOps, Docker]
-tags: [devops,docker,php,nginx,container]
+tags: [devops,docker,php,nginx]
 ---
 
 ## PHP-FPM with NGINX in Docker container
@@ -128,23 +128,6 @@ services:
 
 ### Complete directory structure
 
-```shell
-.
-├── Dockerfile
-├── compose.yml
-├── entrypoint.sh
-├── nginx
-│   └── default.conf
-├── php
-│   ├── php.ini
-│   ├── socket
-│   ├── www.conf
-│   └── zz-docker.conf
-└── src
-    ├── index.php
-    └── styles
-        └── features.css
-```
 
 Execute the following command to start the container:
 
