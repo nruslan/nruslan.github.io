@@ -239,7 +239,7 @@ networks:
 
 Click `Deploy the stack` button at the bottom of the page.
 
-## Grafana Config
+## Grafana Configuration
 
 When all four containers will be up and running open your favorite browser and navigate to the following URL: `http://host-ip-address:3000`.
 You should see the Grafana login page. Use your _**user**_ and the _**password**_ you've set for `GF_SECURITY_ADMIN_USER` and `GF_SECURITY_ADMIN_PASSWORD` environment variables to login.
@@ -248,6 +248,10 @@ Click on the configuration icon located on the left sidebar and then click on `A
 
 ![img-description](/assets/img/posts/2022-10-23/add-data-source.PNG)
 _Add data source Grafana page_
+
+Click on Prometheus.
+
+
 
 > Work in progress
 {: .prompt-info }
