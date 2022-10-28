@@ -251,7 +251,5 @@ _Add data source Grafana page_
 
 Click on Prometheus.
 
-
-
 > Work in progress
 {: .prompt-info }
