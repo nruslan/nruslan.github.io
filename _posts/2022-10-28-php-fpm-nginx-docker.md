@@ -126,9 +126,6 @@ services:
     tty: true
 ```
 
-### Complete directory structure
-
-
 Execute the following command to start the container:
 
 ```shell
