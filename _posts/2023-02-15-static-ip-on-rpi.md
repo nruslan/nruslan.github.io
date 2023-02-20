@@ -16,7 +16,7 @@ sudo nano /etc/dhcpcd.conf
 
 Scroll down to the `Example static IP configuration:` section See the sample config below:
 
-```ini
+```text
 # Example static IP configuration:
 #interface eth0
 #static ip_address=192.168.0.10/24
@@ -27,7 +27,7 @@ Scroll down to the `Example static IP configuration:` section See the sample con
 
 Uncomment and update the `interface` line and the following `static ip_address` lines:
 
-```ini
+```text
 # Example Static IP configuration:
 interface eth0
 static ip_address=192.168.0.11/24
@@ -36,7 +36,7 @@ static ip_address=192.168.0.11/24
 
 Keep the `ip6_address` line commented and uncomment the following `static routers` line and set the proper IP address.
 
-```ini
+```text
 #static ip6_address=fd51:42f8:caae:d92e::ff/64
 static routers=192.168.0.1
 ```
@@ -44,14 +44,14 @@ static routers=192.168.0.1
 
 Uncomment the `static domain_name_servers` line and update the primary and the secondary DNS's IP addresses:
 
-```ini
+```text
 static domain_name_servers=192.168.0.1 1.1.1.1
 ```
 {: .nolineno }
 
 Here is the completed and updated `Example static IP configuration` section:
 
-```ini
+```text
 # Example static IP configuration:
 interface eth0
 static ip_address=192.168.0.11/24
