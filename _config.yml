@@ -16,17 +16,17 @@ lang: en
 prefer_datetime_locale:
 
 # Change to your timezone › http://www.timezoneconverter.com/cgi-bin/findzone/findzone
-timezone: America/Los_Angeles
+timezone: America/New_York
 
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: "RN Tech Docs"  # the main title
+title: "NRuslan"  # the main title
 
-tagline: WebDevOps Notes and Documentation   # it will display as the sub-title
+tagline: WebDev & DevOps Docs  # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
-  Web Developer notes and DevOps docs for the future references.
+  Web Developer notes and DevOps documentation for the future references.
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
 url: 'https://nruslan.github.io'
