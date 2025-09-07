@@ -6,7 +6,7 @@ categories: [DevOps, Proxmox]
 tags: [devops, proxmox]
 image:
   path: /assets/img/posts/2025-06-06/intel-cpu-microcode.jpg
-  alt: Jekyll in Docker
+  alt: Intel CPU microcode
 ---
 
 Microcode updates are intended to fix found security vulnerabilities and other serious CPU bugs.
