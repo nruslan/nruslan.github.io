@@ -25,7 +25,12 @@ To update the `sources.list` file execute the following command:
 ```shell
 nano /etc/apt/sources.list
 ```
-then append `non-free-firmware` to the end of each line. Now you can save and close the file.
+then append `non-free-firmware` to the end of each line. See the sample screenshot below:
+
+![img-description](/assets/img/posts/2025-06-06/screenshot.jpg)
+_sources.list_
+
+Now you can save the changes and close the text editor.
 
 The next step is to execute `apt update` command and then:
 
