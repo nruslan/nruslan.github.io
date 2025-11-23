@@ -14,7 +14,7 @@ Install the necessary packages by executing the command listed below:
 ```shell
 apt install libsasl2-modules -y
 ```
-Next, we need to edit the `posfix` configuration file:
+Next, we need to edit the `postfix` configuration file:
 
 ```shell
 sudo nano /etc/postfix/main.cf
